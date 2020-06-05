@@ -2,8 +2,7 @@
 window.addEventListener('DomContentLoaded', function(){
   const ulList = document.querySelector("#users-list");
   const fetchUrl = "http://localhost:3000/users";
-})
-function submitData(userName, userEmail) {
+  function submitData(userName, userEmail) {
   let users = {
     name: userName,
     email: userEmail,
@@ -31,3 +30,5 @@ function submitData(userName, userEmail) {
     })
     .catch((error) => console.log(`error: ${error}`));
 }
+
+})
