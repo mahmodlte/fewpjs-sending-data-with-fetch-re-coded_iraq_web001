@@ -1,10 +1,6 @@
 // Add your code here
 let ulList;
-window.addEventListener('DOMContentLoaded', (event) => {
-  console.log('DOM fully loaded and parsed');
    ulList = document.querySelector("#users-list")
-
-});
 
   const fetchUrl = "http://localhost:3000/users";
 
