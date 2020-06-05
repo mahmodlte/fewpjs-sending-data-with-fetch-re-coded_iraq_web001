@@ -1,6 +1,7 @@
 // Add your code here
+let ulList 
 window.addEventListener('DomContentLoaded', function(){
-  const ulList = document.querySelector("#users-list");
+   ulList = document.querySelector("#users-list");
 })
   const fetchUrl = "http://localhost:3000/users";
 
