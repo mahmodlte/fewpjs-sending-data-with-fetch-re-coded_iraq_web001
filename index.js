@@ -26,7 +26,7 @@ function submitData(userName, userEmail) {
       ulList.insertAdjacentHTML(
         "beforebegin",
         `
-       this is the id num ${data.id}
+       <li>this is the id num ${data.id}</li>
        `
       );
 
@@ -34,7 +34,7 @@ function submitData(userName, userEmail) {
     })
     .catch((error) => {
       ulList.insertAdjacentHTML ('afterend' , `
-      
+      <p>error${error}
       
       `)
     })
