@@ -1,5 +1,5 @@
 // Add your code here
-let ulList 
+let ulList;
 window.addEventListener('DomContentLoaded', function(){
    ulList = document.querySelector("#users-list");
 })
