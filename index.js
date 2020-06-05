@@ -32,6 +32,11 @@ function submitData(userName, userEmail) {
 
       console.log(data);
     })
-    .catch((error) => console.log(`error: ${error}`));
+    .catch((error) => {
+      ulList.insertAdjacentHTML ('afterend' , `
+      
+      
+      `)
+    })
 }
 submitData("mah", "gmail")
