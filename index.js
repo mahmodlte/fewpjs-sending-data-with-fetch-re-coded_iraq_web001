@@ -1,5 +1,5 @@
 // Add your code here
-document.addEventListener('DomContentLoaded', function(){
+document.addEventListener('load', function(){
   const ulList = document.querySelector("#users-list");
   const fetchUrl = "http://localhost:3000/users";
   function submitData(userName, userEmail) {
