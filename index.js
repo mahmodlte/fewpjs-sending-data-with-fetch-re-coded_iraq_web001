@@ -1,4 +1,11 @@
 // Add your code here
+let ulList;
+window.addEventListener('DOMContentLoaded', (event) => {
+  console.log('DOM fully loaded and parsed');
+   ulList = document.querySelector("#users-list")
+
+});
+
   const fetchUrl = "http://localhost:3000/users";
 
 function submitData(userName, userEmail) {
@@ -18,7 +25,7 @@ function submitData(userName, userEmail) {
   return fetch(fetchUrl, configObj)
     .then((res) => res.json())
     .then((data) => {
-      const ulList = document.querySelector("#users-list");
+      console.log(ulList)
 
       ulList.insertAdjacentHTML(
         "beforebegin",
@@ -31,3 +38,4 @@ function submitData(userName, userEmail) {
     })
     .catch((error) => console.log(`error: ${error}`));
 }
+submitData("mah", "gmail")
