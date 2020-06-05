@@ -39,4 +39,3 @@ function submitData(userName, userEmail) {
       `)
     })
 }
-submitData("mah", "gmail")
